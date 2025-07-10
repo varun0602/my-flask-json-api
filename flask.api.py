@@ -3,6 +3,10 @@ from jsonschema import validate, ValidationError
 import os
 
 app = Flask(__name__)
+@app.route("/")
+def home():
+    return "Welcome to the Flask JSON API!"
+
 
 books = []
 
