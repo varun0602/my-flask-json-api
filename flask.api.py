@@ -2,6 +2,10 @@ from flask import Flask ,request,jsonify
 from jsonschema import validate,ValidationError
 
 app = Flask(__name__)
+@app.route("/")
+def home():
+    return "Welcome to the Flask JSON API!"
+
 
 books=[]
 
