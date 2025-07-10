@@ -57,7 +57,11 @@ def delete_book(index):
     deleted = books.pop(index)
     return jsonify({"message":"book deleted","book":deleted})
 
+import os
+
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=True)
+
 
 
