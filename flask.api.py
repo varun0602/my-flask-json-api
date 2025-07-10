@@ -57,6 +57,11 @@ def delete_book(index):
     deleted = books.pop(index)
     return jsonify({"message":"book deleted","book":deleted})
 
+@app.route("/")
+def home():
+    return "✅ Flask JSON API is running!"
+
+
 import os
 
 if __name__ == "__main__":
