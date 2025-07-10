@@ -1,1 +1,1 @@
-web: python practice_flask.py
+web: python practice flask.py
