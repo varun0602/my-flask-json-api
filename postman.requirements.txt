@@ -1,0 +1,9 @@
+POST https://your-render-url/books
+Content-Type: application/json
+
+{
+  "title": "1984",
+  "author": "George Orwell",
+  "price": 299.99,
+  "in_stock": true
+}

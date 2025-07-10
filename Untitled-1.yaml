@@ -3,11 +3,7 @@ services:
     name: my-flask-json-api
     env: python
     buildCommand: ""
-<<<<<<< HEAD
-    startCommand: python practice flask.py
-=======
     startCommand: python flask.api.py
->>>>>>> 504ca68 (fix: renamed flask.api to flask_api.py and updated Procfile)
     envVars:
       - key: FLASK_ENV
         value: production

@@ -1,0 +1,35 @@
+### GET all books
+GET https://my-flask-json-api.onrender.com/books
+Accept: application/json
+
+###
+
+### POST a new book
+POST https://my-flask-json-api.onrender.com/books
+Content-Type: application/json
+
+{
+  "title": "Learn Flask",
+  "author": "Alice",
+  "price": 299.99,
+  "in_stock": true
+}
+
+###
+
+### PUT update book at index 0
+PUT https://my-flask-json-api.onrender.com/books/0
+Content-Type: application/json
+
+{
+  "title": "Master Flask",
+  "author": "Bob",
+  "price": 349.99,
+  "in_stock": false
+}
+
+###
+
+### DELETE book at index 0
+DELETE https://my-flask-json-api.onrender.com/books/0
+Accept: application/json
