@@ -3,7 +3,7 @@ services:
     name: my-flask-json-api
     env: python
     buildCommand: ""
-    startCommand: python app.py
+    startCommand: python practice flask.py
     envVars:
       - key: FLASK_ENV
         value: production
